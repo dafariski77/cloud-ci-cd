@@ -24,7 +24,6 @@ steps:
 
 options:
   logging: NONE
-  region: asia-southeast2
 
 serviceAccount: "cloud-run@hear4u-dev.iam.gserviceaccount.com"
 
