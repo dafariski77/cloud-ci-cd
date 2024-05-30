@@ -22,10 +22,5 @@ steps:
         "--allow-unauthenticated",
       ]
 
-options:
-  logging: NONE
-
-serviceAccount: "cloud-run@hear4u-dev.iam.gserviceaccount.com"
-
 images:
   - gcr.io/$PROJECT_ID/test-cd
