@@ -1,13 +1,13 @@
-FROM node:20
+FROM node:16-alpine3.17
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
-COPY package.json pnpm-lock.yaml ./
+COPY package.json package-lock.json ./
 
-RUN npm i -g pnpm
+COPY . .
 
-RUN pnpm i
+RUN npm i
 
 EXPOSE 8000
 
-CMD [ "pnpm", "start" ]
+CMD [ "npm", "run", "start" ]
